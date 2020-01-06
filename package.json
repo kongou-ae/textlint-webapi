@@ -6,6 +6,7 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^1.0.1",
     "textlint": "^11.5.0",
     "textlint-rule-ja-hiragana-fukushi": "^1.2.0",
     "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",

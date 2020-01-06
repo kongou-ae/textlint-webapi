@@ -6,7 +6,7 @@ module.exports = async function (context, req) {
 
         const TextLintCore = require('textlint').TextLintCore;
         const joyokanji = require('textlint-rule-joyo-kanji');
-        //const droppingSa = require('@textlint-ja/textlint-rule-no-insert-dropping-sa');
+        const droppingSa = require('@textlint-ja/textlint-rule-no-insert-dropping-sa');
         const hiraganaFukushi = require('textlint-rule-ja-hiragana-fukushi');
         const hiraganaHojodoshi = require('textlint-rule-ja-hiragana-hojodoushi');
         const hiraganaKeishikiMeishi = require('textlint-rule-ja-hiragana-keishikimeishi');
@@ -15,15 +15,15 @@ module.exports = async function (context, req) {
         const noWeakPhrase = require('textlint-rule-ja-no-weak-phrase');
         const noDoubleNegative = require('textlint-rule-no-double-negative-ja');
         const noDoubleConjunction = require('textlint-rule-no-doubled-conjunction');
-        //const noDoubleConjunctiveGa = require('textlint-rule-no-doubled-conjunctive-particle-ga');
-        //const noDoubledJoshi = require('textlint-rule-no-doubled-joshi');
+        const noDoubleConjunctiveGa = require('textlint-rule-no-doubled-conjunctive-particle-ga');
+        const noDoubledJoshi = require('textlint-rule-no-doubled-joshi');
         const noDroppingRa = require('textlint-rule-no-dropping-the-ra');
         const noMixDearuDesumasu = require('textlint-rule-no-mix-dearu-desumasu');
         const noRenyoChushi = require('textlint-rule-no-renyo-chushi');
         const preferTariTari = require('textlint-rule-prefer-tari-tari');
-        //const presetJtfStyle = require('textlint-rule-preset-jtf-style');
+        const presetJtfStyle = require('textlint-rule-preset-jtf-style');
         const singleNado = require('textlint-rule-single-nado');
-        //const technicalWriting = require('textlint-rule-preset-ja-technical-writing');
+        const technicalWriting = require('textlint-rule-preset-ja-technical-writing');
 
         context.log('JavaScript HTTP trigger function processed a request.');
 
@@ -47,7 +47,7 @@ module.exports = async function (context, req) {
             "no-mix-dearu-desumasu" : noMixDearuDesumasu,
             "no-renyo-chushi" : noRenyoChushi,
             "prefer-tari-tari" : preferTariTari,
-            //"preset-jtf-style" : presetJtfStyle,
+            "preset-jtf-style" : presetJtfStyle,
             "single-nado" : singleNado,
             //"textlint-rule-preset-ja-technical-writing" : technicalWriting
             
