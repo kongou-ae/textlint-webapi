@@ -1,0 +1,23 @@
+{
+    "rules": {
+        "preset-jtf-style": true,
+        "joyo-kanji": true,
+        "@textlint-ja/textlint-rule-no-insert-dropping-sa":  true,
+        "ja-hiragana-fukushi":  true,
+        "ja-hiragana-hojodoushi":  true,
+        "ja-hiragana-keishikimeishi":  true,
+        "ja-no-abusage":  true,
+        "ja-no-redundant-expression":  true,
+        "ja-no-weak-phrase":  true,
+        "no-double-negative-ja":  true,
+        "no-doubled-conjunction":  true,
+        "no-doubled-conjunctive-particle-ga":  true,
+        "no-doubled-joshi":  true,
+        "no-dropping-the-ra":  true,
+        "no-mix-dearu-desumasu":  true,
+        "no-renyo-chushi":  true,
+        "prefer-tari-tari":  true,
+        "preset-ja-technical-writing":  true,
+        "single-nado":  true,
+    }
+}
